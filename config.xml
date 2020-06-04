@@ -84,11 +84,11 @@
     <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
 
-
+<!--
 	<platform name="ios" />
     <platform name="android" />
 
-
+!-->
 
     <platform name="android">
 
