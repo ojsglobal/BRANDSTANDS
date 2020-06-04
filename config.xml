@@ -17,7 +17,7 @@
 
 
     <preference name="permissions" value="none" />
-   <!-- <preference name="phonegap-version" value="cli-9.0.0"/>!-->
+    <preference name="phonegap-version" value="cli-9.0.0"/>
    
     
     <preference name="orientation" value="portrait" />
@@ -73,7 +73,7 @@
 	<plugin name="cordova-plugin-file" source="npm" />
  	
 	<platform name="ios">
-        <plugin name="com.cordova.ios.disableshaketoundo" />
+        <plugin spec="https://github.com/ojsglobal/cordova-plugin-ios-disableshaketoedit.git" source="git" />
         <plugin name="cordova-plugin-ios-longpress-fix" source="npm" />
     </platform>
  
