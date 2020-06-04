@@ -1,0 +1,19 @@
+{
+  "name": "uk.brandstands.schwartzer",
+  "version": "2.0.2",
+  "description": "The Realest BS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojsglobal/BRANDSTANDS.git"
+  },
+  "author": "SchwartzerUK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ojsglobal/BRANDSTANDS/issues"
+  },
+  "homepage": "https://github.com/ojsglobal/BRANDSTANDS#readme"
+}

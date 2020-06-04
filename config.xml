@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = 'http://www.w3.org/ns/widgets'
+        xmlns:gap = 'http://phonegap.com/ns/1.0'
+        id        = "uk.brandstands.schwartzer"
+        version   = "2.0.2"
+		    name = "brandstands">
+    <name>Brand Stands</name>
+    <description>
+        The Realest BS
+    </description>
+
+    <author href="http://www.schwartzer.uk" email="support@schwartzer.uk"> 
+      Schwartzer UK
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+
+    <preference name="permissions" value="none" />
+   <!-- <preference name="phonegap-version" value="cli-9.0.0"/>!-->
+   
+    
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="true" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="keepRunning" value="true" />
+    <preference name="SplashScreen" value="splash"/>
+    <preference name="SplashScreenDelay" value="0"/>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="loadUrlTimeoutValue" value="990000" />
+    <preference name="android-minSdkVersion" value="26" />
+    <preference name="deployment-target" value="8.0" />
+    <preference name="CrosswalkAnimatable" value="true" /> 
+    
+    
+    <preference name="android-windowSoftInputMode" value="adjustPan"  />
+    <preference name="LogLevel" value="brandstands"/>
+    <preference name="android-build-tool" value="gradle" />
+ 
+	<!-- INSERT HERE !-->
+  
+
+    <plugin name="cordova-plugin-admob-free" spec="0.25.0">
+		<variable name="ADMOB_APP_ID" value="ca-app-pub-8607059282540011~8054570177" />
+	</plugin>
+	
+	
+ 		<!-- JUST FOR ADMOB'S BLUETOOTH QUIRK !-->
+    <plugin name="cordova-plugin-permissions" source="pgb" spec="1.2.2" /> 
+    
+    
+
+	<plugin name="com.telerik.plugins.nativepagetransitions" source="npm" />
+	
+
+
+
+
+	<!-- STANDARDS !-->
+	
+	<plugin name="cordova-plugin-file" source="npm" />
+ 	
+	<platform name="ios">
+        <plugin name="com.cordova.ios.disableshaketoundo" />
+        <plugin name="cordova-plugin-ios-longpress-fix" source="npm" />
+    </platform>
+ 
+    <plugin name="cordova-plugin-insomnia" source="npm" /> 
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+    <plugin name="cordova-plugin-device" source="npm" />
+    <plugin name="windowsoftinput" source="npm"/>
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+
+
+	<platform name="ios" />
+    <platform name="android" />
+
+
+
+    <platform name="android">
+
+    
+      <icon src="res/icon/android/icon.png"/>
+      <splash src="res/screen/android/screen-ldpi-portrait.png" density="ldpi" />
+      <splash src="res/screen/android/screen-mdpi-portrait.png" density="mdpi" />
+      <splash src="res/screen/android/screen-hdpi-portrait.png" density="hdpi" />
+      <splash src="res/screen/android/screen-xhdpi-portrait.png" density="xhdpi" />  
+    
+    </platform>
+    
+    <platform name="ios">
+         
+        <icon src="res/icon/ios/icon-1024.png" width="1024" height="1024"/>
+        <icon src="res/icon/ios/icon-small.png" width="29" height="29"/>
+        <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58"/>
+        <icon src="res/icon/ios/icon-small@3x.png" width="87" height="87"/>
+        <icon src="res/icon/ios/icon-small-40.png" width="40" height="40"/>
+        <icon src="res/icon/ios/icon-small-40@2x.png" width="80" height="80"/>
+        <icon src="res/icon/ios/icon-small-40@3x.png" width="120" height="120"/>
+        <icon src="res/icon/ios/icon-small-50.png" width="50" height="50"/>
+        <icon src="res/icon/ios/icon-small-50@2x.png" width="100" height="100"/>
+        <icon src="res/icon/ios/icon.png" width="57" height="57"/>
+        <icon src="res/icon/ios/icon@2x.png" width="114" height="114"/>
+        <icon src="res/icon/ios/icon-60.png" width="60" height="60"/>
+        <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120"/>
+        <icon src="res/icon/ios/icon-60@3x.png" width="180" height="180"/>
+        <icon src="res/icon/ios/icon-72.png" width="72" height="72"/>
+        <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144"/>
+        <icon src="res/icon/ios/icon-76.png" width="76" height="76"/>
+        <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152"/>
+        <icon src="res/icon/ios/icon-167.png" width="167" height="167"/>
+        <icon src="res/icon/ios/icon-83.5@2x.png" width="167" height="167"/>
+        <!--  Storyboard portrait  -->
+        <splash src="res/screen/ios/Default@2x~iphone~anyany.png"/>
+        <splash src="res/screen/ios/Default@2x~iphone~comany.png"/>
+        <splash src="res/screen/ios/Default@3x~iphone~anyany.png"/>
+        <splash src="res/screen/ios/Default@3x~iphone~comany.png"/>
+        <splash src="res/screen/ios/Default@2x~ipad~anyany.png"/>
+        <splash src="res/screen/ios/Default@2x~ipad~comany.png"/>
+
+    
+    </platform>
+
+
+	
+	<access origin="*" />
+	<access origin="tel:*" launch-external="true"/>
+    <access origin="sms:*" launch-external="true"/>
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+    
+
+</widget>

@@ -1,0 +1,7 @@
+{
+  "name": "Brand Stands",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Brand Stands</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1, shrink-to-fit=no, viewport-fit=cover">
+
+
+	<script src="cordova.js"></script>
+		
+	<script src="js/jquery.js"></script> 	
+
+	<script src="js/jquery.easing.js"></script> 
+	
+	<script src="js/hammer-time.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	
+	
+	<script src="js/common_functions.js"></script>	
+	<script src="js/advert_functions.js"></script>
+
+
+	<link  href="css/stylesheet.css" rel="stylesheet">
+	<script src="js/main_app.js"></script>
+	
+	
+
+	<style>
+		
+	::-webkit-scrollbar 
+	{ 
+	    display: none; 
+	}
+	
+	</style>
+
+</head>
+
+<div id="alert_box" ></div>
+	
+<body class="">
+ 
+ 
+	<!-- WAITING SCREEN !-->
+	<div id="waiting_screen" class="flex_centre">		
+	<!--	<div id="waiting_message">Working...</div>!-->
+</div>
+	
+
+	<!-- MAIN APP !-->
+<div id="app" class="full_fake_screen">
+	
+	<logo_header class="flex_centre">
+		<img src="img/bs_logo.jpg" class="main_logo_image">
+	</logo_header>
+
+	
+		<!-- fake_loading -->
+	  <div id="fake_loading" class="standard_card card_background current_screen login_only">
+			<div class="flex_centre" style="height:70%">
+				<img src="img/app_logo.png" class="main_logo_image">
+			</div>
+			
+			<div id="logo_bottom"></div>
+				
+			
+			<div id="fake_progress_bar" class="seperator"></div>
+			<div class="seperator_background"></div>
+		
+		</div>		
+		<!-- end fake_loading -->	
+		
+		
+	<nav class="">
+		<div id="home_link" class="nav_link flex_centre"><img id="home_link_icon" src="img/home2.png"></div>
+	</nav>
+
+	
+		
+</div>
+	
+	
+<div id="holding_area" style="z-index:0; position: absolute; top: 0px; left:0px; width:100%; height: 100%; visibility: hidden">
+
+	<div id="holding_image_1_holder" class="visibility: hidden"><img id="holding_image_1" src=""></div>
+	<div id="holding_image_2_holder" class="visibility: hidden"><img id="holding_image_2" src=""></div>
+
+
+		<!-- dashboard -->
+	<div id="dashboard" class="standard_card" data-index=120>
+		
+			
+		<div class="standard_tile_holder yellow_background" style="z-index:5;">
+			<div id="home_options" class="standard_tile">
+			
+			
+				
+			
+			</div><!-- end standard_tile!-->			
+		</div><!-- end standard_tile_holder!-->	
+	
+	
+	</div>
+			
+	<!-- end dashboard -->	
+	
+	
+			<!-- help -->
+	<div id="help" class="standard_card" data-index=120>
+		
+			
+		<div class="standard_tile_holder yellow_background" style="z-index:5;">
+			<div id="help_text" class="standard_tile">
+			<div class="center_align">
+				<!--"CRITICS KNOW<br>F*#K ALL<br>ABOUT<br>BEING COOL"!-->
+				"STYLE<br>IS EVERYTHING<br>NO ONE GIVES<br>A F*#K<br>ABOUT REVIEWS"
+			</div>
+			<div class="medium_font center_align">
+				<div class="large_spacer"></div>
+				ANDY WARHOL
+			</div>
+			
+			<div class="bottom_strap">#NOGAFAR</div>
+				
+			
+			</div><!-- end standard_tile!-->			
+		</div><!-- end standard_tile_holder!-->	
+	
+	
+	</div>
+			
+	<!-- end help -->	
+	
+
+	</div>
+	<!-- end holding area !-->
+	
+	
+	
+	
+	
+</body>
+
+
+<script>
+
+  	$(document).ready(function()
+    {
+    	  
+        $('#app').css('opacity', 1);
+        
+				if (blnDebug != true)
+				{
+					document.addEventListener("deviceready", onDeviceReady, false);
+					
+				}else
+				{
+					onDeviceReady();
+				}
+		
+    });
+    
+		
+		function onDeviceReady() 
+		{
+
+				objMain.initialize();
+			
+		}
+		
+	
+	
+</script>
